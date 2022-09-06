@@ -7,6 +7,7 @@ function showTime(){
     const t = new Date();
     let time=t.getHours() + ":" + t.getMinutes() + ":" + t.getSeconds() + " " + weekDay[t.getDay()];
     document.getElementById("myClock").innerHTML=time;
+    setTimeout(showTime, 1000);
 }
 showTime();
 
